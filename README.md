@@ -140,6 +140,25 @@ From confusion matrix represented in Figure 28 there is a better detection for c
 ### 5.2- Neural network (TensorFlow): 
 In this section, three values of learning rate for gradient descent algorithm were used: 0.00001, 0.000001 and 0.0000001. The same as before, in order to choose the optimum value the following two figures were illustrated:
 
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/multi_class_train.png)
+##### Figure 7: Multi-class classification for training data
+
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/multi_class_test.png)
+##### Figure 8: Multi-class classification for testing data
+
+From figures 7 and 8, the value 0.00001 was chosen as the optimal learning rate because it has the highest accuracy value and has presented the lowest number of iterations, 900 itera-tions, to reach this high accuracy. 
+Now, fixing the number of iterations to 900 and the learning rate to 0.00001 the following confusion matrices (Figure 9 and Figure 10) were obtained for both train and test phase: 
+
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/Conf_mat_Train(NN).png)
+##### Figure 9: Training Data Confusion Matrix with NN
+
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/Conf_mat_Test(NN).png)
+##### Figure 10: Testing data confusion matrix with NN 
+
+In the neural network case, the train accuracy is 0.845 and the test accuracy is 0.867 while for the minimum distance criterion, the train accuracy is 0.743 and the test accuracy is 0.562. It is clear that neural network approach gives better performance than minimum dis-tance.
+Better detection for classes: 3, 4, 9 and 15 in the test phase (Figure 10) and classes 3, 9, and 16 are well detected in the train phase (Figure 9).
+For the neural network, need to choose well the parameters because too many hidden layers can cause the overfitting, slow down the learning and could even degrade the performance of the neural network.
+
 
 
 
