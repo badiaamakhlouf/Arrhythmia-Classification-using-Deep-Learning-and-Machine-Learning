@@ -114,11 +114,9 @@ A box constraint C higher than 10 (chosen in this report) will decrease the TP a
 ### 4.5- Result analysis
 
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/Table%206.png)
-
 ###### Table 2: Sensitivity and Specificity for the used approaches
 
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/table%207.png)
-
 ###### Table 3: TP, FP, TN, FN and Probability error
 For the test dataset:
     •	Bayesian approach gave a probability error (0.265) less than the one given by the Mini-mum distance criterion (0.509).
