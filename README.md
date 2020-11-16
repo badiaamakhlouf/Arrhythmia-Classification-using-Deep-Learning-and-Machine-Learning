@@ -124,6 +124,17 @@ For the test dataset:
  
  •	Among the four methods and with the chosen parameters in this work, Bayes Criterion offers the best results for sensitivity followed by SVM. The neural network offers the best behavior for the specificity and the worst for the sensitivity while SVM presents the worst result for specificity. 
 
+## 5- For multi-class classification:
+The last column was left unchanged (containing integers from 1 to 16). In this classification technique, only minimum distance and Neural Networks were evaluated.
+### 5.1- Minimum distance criteria : 
+To evaluate the previous approach, the confusion matrix was also used as a performance metric with the probability error. We have found a probability error that was equal to 0.257 for the train dataset and was 0.438 for the test dataset. It is clear that the probability error for the train data was less than the probability error for the test data.
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/conf_MD_Train.png)
+##### Figure 5: Training data confusion matrix with minimum distance criteria
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/conf_MD_Test.png)
+##### Figure 6: Testing Data confusion matrix with minimum distance criteria
+From confusion matrix represented in Figure 28 there is a better detection for classes: 4, 9, and 15 in the test phase while the one in Figure 27 showns that classes 4, 7, 8, 9 and 16 are well detected in the train phase.
+### 5.2- Neural network (TensorFlow): 
+In this section, three values of learning rate for gradient descent algorithm were used: 0.00001, 0.000001 and 0.0000001. The same as before, in order to choose the optimum value the following two figures were illustrated:
 
 
 
