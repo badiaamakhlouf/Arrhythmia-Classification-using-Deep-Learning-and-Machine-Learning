@@ -103,7 +103,9 @@ In this report, the SVM approach was used to perform binary classification. The 
 Before applying SVM, the half of the provided data was dedicated to the train phase and the other half was assigned to the test phase then the data was pre-processed using the PCA.
 
 The data stored in matrix X (226 rows corresponding to 226 patients and 257 columns corre-sponding to the features) while y is the vector of 226 classes (contains either value 0 or val-ue 1). The hyperplane that separates the two classes satisfies the following equation:
-                            XT*W-b=0
+
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/equation%202.PNG)     
+
 Where W is column vector with 257 elements and b is an offset equal to 0.33.
 
 In the SVM classification report, 118 samples were assigned to class 0 and 108 samples were assigned to class 1 the same thing as the original test target vector (118 for class 0 and 108 for class 1). 
