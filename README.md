@@ -120,9 +120,9 @@ A box constraint C higher than 10 (chosen in this report) will decrease the TP a
 ###### Table 3: TP, FP, TN, FN and Probability error
 For the test dataset:
 
-    •	Bayesian approach gave a probability error (0.265) less than the one given by the Mini-mum distance criterion (0.509).
-    
-    •	Among the four methods and with the chosen parameters in this work, Bayes Criterion offers the best results for sensitivity followed by SVM. The neural network offers the best behavior for the specificity and the worst for the sensitivity while SVM presents the worst result for specificity. 
+ •	Bayesian approach gave a probability error (0.265) less than the one given by the Mini-mum distance criterion (0.509).
+ 
+ •	Among the four methods and with the chosen parameters in this work, Bayes Criterion offers the best results for sensitivity followed by SVM. The neural network offers the best behavior for the specificity and the worst for the sensitivity while SVM presents the worst result for specificity. 
 
 
 
