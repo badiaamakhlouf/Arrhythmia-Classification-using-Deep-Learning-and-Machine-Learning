@@ -51,11 +51,12 @@ Equally, in this case the last column was divided onto the same classes of minim
 
 Before deploying the Bayes criteria, need to reduce features number through performing the Karhunen-Loève decomposition and selecting only a subset of the features, this subset must corresponds to the largest eigenvalues. The developed python program automatically pick the largest eigenvalues that allow getting the target percentage and satisfying the following conditions:  
 
-                            ∑_(k=1)^L▒λk=Percentage*P         P=∑_(k=1)^F▒λk
+![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/equation.PNG)
 
 L is the number of extracted features and it must be as small as possible, knowing that L is less than F: the total number of features.
 
 The confusion matrix has been changed depending on the target percentage as follow:
+
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/Percentage%20comparaison.PNG)
 
 In the coming analysis and interpretation, the percentage was fixed to 0.99 because it has gave the lowest probability error.
@@ -63,25 +64,35 @@ In the coming analysis and interpretation, the percentage was fixed to 0.99 beca
 As shown in Figure 2, the number of used eigenvec-tors was 76 for Healthy class and 67 for arrhythmic class. 
 
 Healthy class requires more eigenvectors because the largest eigenvalues to satisfy the target condition are lower with respect to arrhythmic class, which is characterized by a larger eigenvalues. 
+
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/eigenval.png)
+
 ###### Figure 2: Eigenvalue representation for both healthy and Arrhythmic classes
+
 In fact, the classification decision in Bayes criterion was based on comparing the probability that the sample is from a predefined class. The sample will be assigned to the class giving the highest probability.
+
 ### 4.3- Neural networks (TensorFlow) approach
 Neural networks can be used to solve both regression problems and classification problems. The designer chooses the structure and the activation functions. Furthermore, the weights and the biases are the variables to be optimized according to the inputs and the desired out-puts. 
 In this section, the last column was divided into two sub-classes class 0 for healthy patients and class 1 for patients with arrhythmia.
 The gradient algorithm was used in this section because it is the typical way to find the op-timized weights and in order to deploy the gradient algorithm three values of learning coef-ficient were tried for both train and test dataset: 0.000001, 0.00001 and 0.0001.
 
 The Figure 3 and Figure 4 were obtained and the coming selection was based on them: 
+
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/Figure%2025.png)
+
 ###### Figure 3: Neural network binary classification training accuracy 
+
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/Figure%2026.png)
+
 ###### Figure 4: Neural network binary classification testing accuracy 
+
 From Figures 3 and 4 it is noticeable that as the learning coefficient increases the accura-cy increases for both train and test phase. 
 
 Choosing an optimum learning rate is crucial because the network may fail in either train, or take much longer to converge to the global minima or not. With a small learning rate, the time required to train the model is lower therefore in the coming analysis the 0.000001 have been chosen as learning rate.
 Fixing the number of iterations to 700 and the learning rate to 0.000001 the following table was obtained:
 
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/table.png)
+
 ###### Table 1: Sensitivity and Specificity for both train data and test data
 
 Neural Network tend to perform overfitting: they adapt more to the training data than the testing data. Overfitting increases if the number of parameters, i.e. number of hidden layers and number of nodes, increases because there is more degrees of freedom and the neural network learns too well the training data.
@@ -99,9 +110,13 @@ In the SVM classification report, 118 samples were assigned to class 0 and 108 s
 
 A box constraint C higher than 10 (chosen in this report) will decrease the TP and TN and will increase FP and FN that we aim to minimize in each model.
 ### 4.5- Result analysis
+
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/Table%206.png)
+
 ###### Table 2: Sensitivity and Specificity for the used approaches
+
 ![alt text](https://github.com/BaddyMAK/Classification_with_ML-DL/blob/main/results/table%207.png)
+
 ###### Table 3: TP, FP, TN, FN and Probability error
 For the test dataset:
     •	Bayesian approach gave a probability error (0.265) less than the one given by the Mini-mum distance criterion (0.509).
