@@ -1,4 +1,4 @@
-# Classification_with_ML-DL
+# Arrhythmia Classification using Deep Learning and Machine Learning
 ## 1-Arrhythmia:
 Arrhythmia is a disease that corresponds to an irregular heartbeat because heart rates can also be irregular. It is also called dysrhythmia. A normal heart rate is between 50 to 100 beats per minute. Arrhythmia and abnormal heart rates do not necessarily occur together. Arrhythmia can occur with a normal heart rate, or with heart rates that are slow (called bradyarrhythmias -- less than 50 beats per minute). Arrhythmias can also occur with rapid heart rates (called tachyarrhythmias -- faster than 100 beats per minute). 
 
